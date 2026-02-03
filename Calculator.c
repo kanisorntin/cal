@@ -20,6 +20,6 @@ int main() {
         }
     }
 
-    printf("Result = %.2f\n", result);
+    printf("result = %.2f\n", result);
     return 0;
 }
