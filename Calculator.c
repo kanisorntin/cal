@@ -15,10 +15,10 @@ int main() {
         } else if (op == '-') {
             result -= num;
         } else if (op == '*') {
-            result= num;
+            result *= num;
         } else if (op == '/') {
             if (num == 0) {
-                printf("ไม่สามารถหาร ตัวเลข 0 ได้ \n");
+                printf("Cannot divide by 0. \n");
                 return 0;
         }
             result /= num;
