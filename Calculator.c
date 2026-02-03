@@ -4,7 +4,7 @@ int main() {
     float result, num;
     char op;
 
-    printf("ป้อนตัวเลข\n");
+    printf("Enter the numbers to calculate.\n");
 
     scanf("%f", &result);
     while (scanf(" %c", &op) == 1 && op != '=') {
@@ -14,12 +14,24 @@ int main() {
             result += num;
         } else if (op == '-') {
             result -= num;
-        } else {
-            printf("โปรดป้อนเครื่องหมายให้ถูกต้อง\n");
+        } else if (op == '*') {
+            result= num;
+        } else if (op == '/') {
+            if (num == 0) {
+                printf("ไม่สามารถหาร ตัวเลข 0 ได้ \n");
+                return 0;
+        }
+            result /= num;
+        }
+        else if (op == '%') {
+            result = result * num / 100;
+        }
+         else {
+            printf("Incorrect mark\n");
             return 0;
         }
     }
 
-    printf("Result = %.2f\n", result);
+    printf("result = %.2f\n", result);
     return 0;
 }
