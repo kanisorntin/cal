@@ -22,8 +22,6 @@ int main() {
                 return 0;
             }
             result /= num;
-        } else if (op == '%') {
-            result = result * num / 100;
         } else {
             printf("Incorrect mark\n");
             return 0;
