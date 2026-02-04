@@ -27,7 +27,7 @@ int main() {
             result = result * num / 100;
         }
          else {
-            printf("Incorrect mark\n");
+            printf("ddddddddddddddddddddddddd\n");
             return 0;
         }
     }
