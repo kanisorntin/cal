@@ -27,7 +27,7 @@ int main() {
             result = result * num / 100;
         }
          else {
-            printf("ddddddddddddddddddddddddd\n");
+            printf("dsaddsadsadwwwwwww\n");
             return 0;
         }
     }
